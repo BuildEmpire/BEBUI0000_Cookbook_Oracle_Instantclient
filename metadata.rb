@@ -1,3 +1,4 @@
+name             'cookbook_oracle_instantclient'
 maintainer       'Fred Thompson'
 maintainer_email 'fred.thompson@buildempire.co.uk'
 license          'Apache 2.0'
