@@ -32,3 +32,7 @@ end
 link "/usr/lib/oracle/#{node['cookbook_oracle_instantclient']['folder_name']}/libocci.so" do
   to "/usr/lib/oracle/#{node['cookbook_oracle_instantclient']['folder_name']}/libocci.so.#{node['cookbook_oracle_instantclient']['version']}"
 end
+
+magic_shell_environment 'ORACLE_HOME' do
+  value "/usr/lib/oracle/#{node['cookbook_oracle_instantclient']['folder_name']}"
+end
